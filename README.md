@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project addresses the concept of a fictional restaurant called Carpa Hanami, which celebrates the authenticity of Japanese cuisine. The underlying purpose of this initiative is to demonstrate my skills in the fields of UI/UX Design, programming and graphic design, while enriching my career with another significant achievement.
 
-## Getting Started
+## Project Requirements
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+```
+React JS
+Next JS
+React Icons
+ScrolReveal
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*The design is based on the Wireframe created using Figma.*
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **[Wireframe Figma](https://figma.com)**
+- **[Behance Apresentation](https://www.behance.net/messier-amaral)**
+- **[Instagram Apresentation](https://instagram.com/messier.amaral)**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Previewing the project
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The final project is hosted on the vercel platform, and can be accessed by everyone by **[clicking here.](https://vercel.io)**
