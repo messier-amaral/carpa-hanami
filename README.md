@@ -7,6 +7,7 @@ React JS
 Next JS
 React Icons
 ScrolReveal
+Swiper
 ```
 
 *The design is based on the Wireframe created using Figma.*
