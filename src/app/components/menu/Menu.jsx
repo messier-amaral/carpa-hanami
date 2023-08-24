@@ -59,18 +59,122 @@ export default function Menu() {
                 <div className={styles.SpecialtyRow}>
                     <div className={styles.FoodCard}>
                         <Image src={Gyoza} alt='Gyoza Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Gyoza</h4>
                         <p className={styles.FoodIngredients}>
                             Massa de gyoza, carne de porco moída, repolho, óleo de gergelim, gengibre ralado, alho-poró, molho shoyu, óleo de pimenta
                         </p>
                     </div>
                     <div className={styles.FoodCard}>
                         <Image src={Yakisoba} alt='Yakisoba Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Yakisoba</h4>
                         <p className={styles.FoodIngredients}>
                             macarrão de yakisoba, carne bovina em tiras finas, molho de yakisoba, molho shoyu, óleo vegetal, gengibre, óleo de pimenta, vegetais
                         </p>
                     </div>
                 </div>
+                <Image src={BackgroundRamen} alt='Background Ramen Image' id={styles.BackgroundSpecialty} />
             </section>
+
+            <section className={styles.SushiContainer}>
+                <h3 id={styles.SushiTitle}>Sushi</h3>
+                <div className={styles.SushiFirstRow}>
+                    <div className={styles.FoodCard}>
+                        <Image src={NigiriSushi} alt='Nigiri Sushi Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Nigiri</h4>
+                        <p className={styles.FoodIngredients}>
+                            tira de salmão, arroz, wasabi, molho shoyu
+                        </p>
+                    </div>
+                    <div className={styles.FoodCard}>
+                        <Image src={MakiSushi} alt='Maki Sushi Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Maki</h4>
+                        <p className={styles.FoodIngredients}>
+                            folhas de alga nori, arroz, pepino, abacate, cenoura, alface, wasabi, molho shoyu
+                        </p>
+                    </div>
+                    <div className={styles.FoodCard}>
+                        <Image src={UrumakiSushi} alt='Urumaki Sushi Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Urumaki</h4>
+                        <p className={styles.FoodIngredients}>
+                            folhas de alga nori, arroz, salmão, wasabi, molho shoyu, pepino, abacate, cenoura
+                        </p>
+                    </div>
+                </div>
+
+                <div className={styles.SushiSecondRow}>
+                    <div className={styles.FoodCard}>
+                        <Image src={Gunkan} alt='Gunkan Sushi Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Gunkan</h4>
+                        <p className={styles.FoodIngredients}>
+                            folhas de alga nori, arroz, atum picado, ovas de peixe, wasabi, molho shoyu
+                        </p>
+                    </div>
+                    <div className={styles.FoodCard}>
+                        <Image src={Temaki} alt='Temaki Sushi Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Temaki</h4>
+                        <p className={styles.FoodIngredients}>
+                            folhas de alga nori, arroz, bastante salmão cortado em tiras, wasabi, cenoura, abacate
+                        </p>
+                    </div>
+                    <div className={styles.FoodCard}>
+                        <Image src={HotRoll} alt='HotRoll Sushi Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Hot Roll</h4>
+                        <p className={styles.FoodIngredients}>
+                            folhas de alga nori, arroz, atum, cream cheese, cebolinha, massa de tempura, óleo de pimenta, óleo vegetal
+                        </p>
+                    </div>
+                </div>
+
+                <div className={styles.SushiThirdRow}>
+                    <div className={styles.FoodName}>
+                        <Image src={Sashimi} alt='Sashimi Sushi Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Sashimi</h4>
+                        <p className={styles.FoodIngredients}>
+                            grande pedaço de salmão, wasabi, molho shoyu
+                        </p>
+                    </div>
+                    <div className={styles.FoodName}>
+                        <Image src={Hossomaki} alt='Hossomaki Sushi Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Hossomaki</h4>
+                        <p className={styles.FoodIngredients}>
+                            folhas de alga nori, tiras de salmão, arroz, abacate, cenoura, molho shoyu
+                        </p>
+                    </div>
+                </div>
+                <Image src={BackgroundRamen} alt='Background Ramen Image' id={styles.BackgroundSushi} />
+            </section>
+
+            <section className={styles.GrilledSpecialtyContainer}>
+                <h3 id={styles.GrilledTitle}>
+                    Especialidades <span className={utilStyles.RedEmphasis}>Grelhadas</span>
+                </h3>
+                <div className={styles.GrilledFirstRow}>
+                    <div className={styles.FoodCard}>
+                        <Image src={Yakitori} alt='Yakitori Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Yakitori</h4>
+                        <p className={styles.FoodIngredients}>
+                            Peito de frango cortado em pedaços pequenos, espetos de bambu, moho de yakitori (shoyu, saquê, mirin e acuçar), cebolinha
+                        </p>
+                    </div>
+                    <div className={styles.FoodCard}>
+                        <Image src={Teriyaki} alt='Teriyaki Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Teriyaki</h4>
+                        <p className={styles.FoodIngredients}>
+                            peito de frango em cubos, molho Teriyaki (Shoyu, mirin e acuçar), arroz, pimentão, brócolis, cebolinha, pimenta, semente de gergelim
+                        </p>
+                    </div>
+                </div>
+                <div className={styles.GrilledSecondRow}>
+                    <div className={styles.FoodCard}>
+                        <Image src={Tempura} alt='Tempura Image' className={styles.FoodImage} />
+                        <h4 className={styles.FoodName}>Tempura</h4>
+                        <p className={styles.FoodIngredients}>
+                            Massa de tempura,  abóbora, batata doce, pimentão, cenoura, pepino, camarão, molho shoyu e tsuyu
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
         </div>
     )
 }
