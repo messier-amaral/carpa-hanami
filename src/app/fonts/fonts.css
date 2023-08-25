@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Soka Regular';
+    src: url('./soka-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Soka UltraBold';
+    src: url('./soka-ultrabold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hiragino Mincho';
+    src: url('./hiragino-mincho.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'New York';
+    src: url('./new-york.otf') format('opentype');
+}

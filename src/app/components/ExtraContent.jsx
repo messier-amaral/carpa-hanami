@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import styles from '@styles/extracontent.module.css';
 
+import Yokocho from '@png/yokocho.png'
+
 export default function ExtraContent() {
     return (
         <section className={styles.Container}>

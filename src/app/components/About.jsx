@@ -1,5 +1,7 @@
 import Image from 'next/image';
-import styles from '';
+import styles from '@styles/about.module.css';
+
+import Sakura from '@png/sakura.png';
 
 export default function AboutUs() {
     return (

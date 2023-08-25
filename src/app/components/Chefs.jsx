@@ -1,6 +1,15 @@
 import Image from 'next/image';
 import styles from '@styles/chefs.module.css';
 
+// Images
+import Kenji from '@chef/kenji.png';
+import Hiroshi from '@chef/hiroshi.png';
+import Alexander from '@chef/alexander.png';
+import Daniel from '@chef/daniel.png';
+
+import Bejamin from '@chef/bejamin.png';
+import Sophia from '@chef/sophia.png';
+
 export default function Chefs() {
     return (
         <section className={styles.Container}>

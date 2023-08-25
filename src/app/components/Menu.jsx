@@ -1,6 +1,30 @@
 import Image from 'next/image';
 import styles from '@styles/menu.module.css';
 
+// Ramen Image
+import ShoyuRamen from '@ramen/shoyu.png';
+import TonkotsuRamen from '@ramen/tonkotsu.png';
+import MisoRamen from '@ramen/miso.png';
+import ShioRamen from '@ramen/shio.png';
+import TsukemenRamen from '@ramen/tsukemen.png';
+
+// Specialty Image
+import Gyoza from '@specialty/gyoza.png';
+import Yakisoba from '@specialty/yakisoba.png';
+import Yakitori from '@specialty/yakitori.png';
+import Teriyaki from '@specialty/teriyaki.png';
+import Tempura from '@specialty/tempura.png';
+
+// Sushi Image
+import NigiriSushi from '@sushi/nigiri.png';
+import MakiSushi from '@sushi/maki.png';
+import UramakiSushi from '@sushi/uramaki.png';
+import GunkanSushi from '@sushi/gunkan.png';
+import TemakiSushi from '@sushi/gunkan.png';
+import HotRollSushi from '@sushi/hot-roll.png';
+import SashimiSushi from '@sushi/sashimi.png';
+import HossomakiSushi from '@sushi/hossomaki.png';
+
 export default function Menu() {
     return (
         <div className={styles.Container}>
@@ -93,7 +117,7 @@ export default function Menu() {
                         </p>
                     </div>
                     <div className={styles.FoodCard}>
-                        <Image src={UrumakiSushi} alt='Urumaki Sushi Image' className={styles.FoodImage} />
+                        <Image src={UramakiSushi} alt='Urumaki Sushi Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Urumaki</h4>
                         <p className={styles.FoodIngredients}>
                             folhas de alga nori, arroz, salmão, wasabi, molho shoyu, pepino, abacate, cenoura
@@ -103,21 +127,21 @@ export default function Menu() {
 
                 <div className={styles.SushiSecondRow}>
                     <div className={styles.FoodCard}>
-                        <Image src={Gunkan} alt='Gunkan Sushi Image' className={styles.FoodImage} />
+                        <Image src={GunkanSushi} alt='Gunkan Sushi Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Gunkan</h4>
                         <p className={styles.FoodIngredients}>
                             folhas de alga nori, arroz, atum picado, ovas de peixe, wasabi, molho shoyu
                         </p>
                     </div>
                     <div className={styles.FoodCard}>
-                        <Image src={Temaki} alt='Temaki Sushi Image' className={styles.FoodImage} />
+                        <Image src={TemakiSushi} alt='Temaki Sushi Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Temaki</h4>
                         <p className={styles.FoodIngredients}>
                             folhas de alga nori, arroz, bastante salmão cortado em tiras, wasabi, cenoura, abacate
                         </p>
                     </div>
                     <div className={styles.FoodCard}>
-                        <Image src={HotRoll} alt='HotRoll Sushi Image' className={styles.FoodImage} />
+                        <Image src={HotRollSushi} alt='HotRoll Sushi Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Hot Roll</h4>
                         <p className={styles.FoodIngredients}>
                             folhas de alga nori, arroz, atum, cream cheese, cebolinha, massa de tempura, óleo de pimenta, óleo vegetal
@@ -127,14 +151,14 @@ export default function Menu() {
 
                 <div className={styles.SushiThirdRow}>
                     <div className={styles.FoodName}>
-                        <Image src={Sashimi} alt='Sashimi Sushi Image' className={styles.FoodImage} />
+                        <Image src={SashimiSushi} alt='Sashimi Sushi Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Sashimi</h4>
                         <p className={styles.FoodIngredients}>
                             grande pedaço de salmão, wasabi, molho shoyu
                         </p>
                     </div>
                     <div className={styles.FoodName}>
-                        <Image src={Hossomaki} alt='Hossomaki Sushi Image' className={styles.FoodImage} />
+                        <Image src={HossomakiSushi} alt='Hossomaki Sushi Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Hossomaki</h4>
                         <p className={styles.FoodIngredients}>
                             folhas de alga nori, tiras de salmão, arroz, abacate, cenoura, molho shoyu

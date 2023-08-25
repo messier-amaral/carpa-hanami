@@ -2,10 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 // Styles
-import styles from '../../styles/page.module.css'
+import styles from '@styles/page.module.css'
 
 // Images and Icons
-import JapanesePattern from ''
+import HeaderLogo from '@svg/header-logo.svg';
+import JapanesePattern from '@svg/japan-pattern.svg';
+import Ramen from '@png/welcome-ramen.png';
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
           <Link href='#' className={styles.NavOptions}>About us</Link>
           <Link href='#' className={styles.NavOptions}>Menu</Link>
 
-          <Image src={styles.HeaderLogo} alt='Header Logo' />
+          <Image src={HeaderLogo} alt='Header Logo' className={styles.HeaderLogo} />
 
           <Link className={styles.NavOptions}>Story</Link>
           <Link className={styles.NavOptions}>Chefs</Link>
@@ -46,7 +48,7 @@ export default function Home() {
             <Image src={JapanesePattern} alt='Japanese Pattern Image' id={styles.JapanesePattern} />
           </div>
           <p id={styles.TitleImage}>Ramen</p>
-          <Image src={styles.Ramen} alt='Ramen Image' id={styles.RamenImage} />
+          <Image src={Ramen} alt='Ramen Image' id={styles.RamenImage} />
         </div>
       </main>
     </div>

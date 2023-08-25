@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import styles from '@styles/experience.module.css'
 
+// Images 
+import JapaneseChef from '@png/japanese-chef.png';
+import Salmon from '@png/salmon.png';
+import JapaneseFood from '@png/japanese-food.png';
+
+import Carpa from '@svg/carpa-experience.svg';
+
 export default function Experience() {
     return (
         <section className={styles.Container}>
