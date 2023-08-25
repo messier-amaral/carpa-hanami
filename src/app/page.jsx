@@ -4,6 +4,9 @@ import Link from 'next/link';
 // Styles
 import styles from '../../styles/page.module.css'
 
+// Images and Icons
+import JapanesePattern from ''
+
 export default function Home() {
   return (
     <div className={styles.Container}>
