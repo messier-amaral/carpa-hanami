@@ -2,6 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@styles/footer.module.css';
 
+// Icons
+import { BsWhatsapp, BsInstagram } from 'react-icons/bs';
+import { SiUbereats } from 'react-icons/sy'
+
 export default function Footer() {
     return (
         <footer className={styles.Container}>
@@ -29,10 +33,15 @@ export default function Footer() {
                 </div>
             </div>
             <div className={styles.SocialMedia}>
-                <Link href='#' className={styles.Icons}></Link>
-                <Link href='#' className={styles.Icons}></Link>
-                <Link href='#' className={styles.Icons}></Link>
-                <Link href='#' className={styles.Icons}></Link>
+                <Link href='#' className={styles.Icons}>
+                    <SiUbereats />
+                </Link>
+                <Link href='#' className={styles.Icons}>
+                    <BsWhatsapp />
+                </Link>
+                <Link href='#' className={styles.Icons}>
+                    <BsInstagram />
+                </Link>
             </div>
         </footer>
     )

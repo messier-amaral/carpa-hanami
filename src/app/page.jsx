@@ -3,11 +3,14 @@ import Link from 'next/link';
 
 // Styles
 import styles from '@styles/page.module.css'
+import utilStyles from '@styles/utils.module.css'
 
 // Images and Icons
 import HeaderLogo from '@svg/header-logo.svg';
 import JapanesePattern from '@svg/japan-pattern.svg';
 import Ramen from '@png/welcome-ramen.png';
+
+import { BsArrowUpRight } from 'react-icons/bs'
 
 export default function Home() {
   return (
@@ -15,14 +18,14 @@ export default function Home() {
       <header className={styles.Header}>
         <nav className={styles.NavBar}>
           <Link href='#' className={styles.NavOptions}>Welcome</Link>
-          <Link href='#' className={styles.NavOptions}>About us</Link>
+          <Link href='#' className={styles.NavOptions} id={styles.OptionMarginOne}>About us</Link>
           <Link href='#' className={styles.NavOptions}>Menu</Link>
 
-          <Image src={HeaderLogo} alt='Header Logo' className={styles.HeaderLogo} />
+          <Image src={HeaderLogo} alt='Header Logo' width={50} className={styles.HeaderLogo} />
 
-          <Link className={styles.NavOptions}>Story</Link>
-          <Link className={styles.NavOptions}>Chefs</Link>
-          <Link className={styles.NavOptions}>Addres</Link>
+          <Link href='#' className={styles.NavOptions}>Story</Link>
+          <Link href='#' className={styles.NavOptions} id={styles.OptionMarginTwo}>Chefs</Link>
+          <Link href='#' className={styles.NavOptions}>Addres</Link>
         </nav>
       </header>
       
@@ -39,16 +42,18 @@ export default function Home() {
 
           <div className={styles.ButtonContainer}>
             <Link href='#' id={styles.AboutUsButton}>About us</Link>
-            <Link href='#' id={styles.SeeMenuButton}>See Our Menu</Link>
+            <Link href='#' id={styles.SeeMenuButton}>See Our Menu <BsArrowUpRight id={styles.IconButton} /> </Link>
           </div>
         </section>
         <div className={styles.ImageContainer}>
-          <div className={styles.PatternContainer}>
-            <div id={styles.CircleImage}></div>
-            <Image src={JapanesePattern} alt='Japanese Pattern Image' id={styles.JapanesePattern} />
+          <div className={styles.BackgroundPattern}>
+            <div className={styles.PatternContainer}>
+              <div id={styles.CircleImage}></div>
+              <Image src={JapanesePattern} alt='Japanese Pattern Image' height={550} id={styles.JapanesePattern} />
+            </div>
+            <p className={styles.TitleImage}>Ramen</p>
           </div>
-          <p id={styles.TitleImage}>Ramen</p>
-          <Image src={Ramen} alt='Ramen Image' id={styles.RamenImage} />
+          <Image src={Ramen} alt='Ramen Image' height={480} id={styles.RamenImage} />
         </div>
       </main>
     </div>

@@ -13,5 +13,7 @@ module.exports = {
         config.resolve.alias['@chefs'] = path.join(__dirname, 'public/png/chefs')
 
         config.resolve.alias['@styles'] = path.join(__dirname, 'styles')
+
+        return config;
     }
 }

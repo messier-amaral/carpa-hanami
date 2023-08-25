@@ -1,1 +1,24 @@
-@import url('../src/app/fonts/fonts.css')
+@import url('../src/app/fonts/fonts.module.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Soka UltraBold', sans-serif;
+    font-weight: 600;
+    color: #F0EDE5;
+}
+
+p {
+    font-family: 'Hiragino Mincho', serif;
+    font-weight: 500;
+    color: #F0EDE5;
+}
+
+a {
+    text-decoration: none;
+    color: #F0EDE5;
+}
