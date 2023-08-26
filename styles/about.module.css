@@ -1,1 +1,75 @@
 @import url('../src/app/fonts/fonts.module.css');
+
+.Container {
+    padding: 45px 80px 80px 80px;
+    background-color: #F0EDE5;
+}
+
+.TitleContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+#Title {
+    letter-spacing: 2px;
+    position: relative;
+    text-align: center;
+    color: #131012;
+
+    font-size: 3rem;
+    font-family: 'Soka Regular', sans-serif;
+    font-weight: 600;
+    z-index: 1;
+}
+
+#CircleTitle {
+    position: absolute;
+    top: -10px;
+    left: 37%;
+    width: 70px;
+    height: 70px;
+    background-color: #DB2D36;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.AboutSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#TitleContent {
+    margin-bottom: 30px;
+    color: #131012;
+    font-family: 'Soka Regular', sans-serif;
+    font-size: 1.8rem;
+}
+
+.Description {
+    width: 620px;
+    line-height: 1.5;
+    color: #131012;
+    font-family: 'Soka Regular', sans-serif;
+    margin-bottom: 30px;
+}
+
+.ExtraContainer {
+    margin-right: 80px;
+    position: relative;
+}
+
+#SakuraImage {
+    position: relative;
+}
+
+#MeaningHanami {
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+    width: 280px;
+    background-color: #DB2D36;
+    padding: 40px 20px;
+}

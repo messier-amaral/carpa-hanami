@@ -10,7 +10,10 @@ import HeaderLogo from '@svg/header-logo.svg';
 import JapanesePattern from '@svg/japan-pattern.svg';
 import Ramen from '@png/welcome-ramen.png';
 
-import { BsArrowUpRight } from 'react-icons/bs'
+import { BsArrowUpRight } from 'react-icons/bs';
+
+// Components 
+import About from './components/About';
 
 export default function Home() {
   return (
@@ -56,6 +59,9 @@ export default function Home() {
           <Image src={Ramen} alt='Ramen Image' height={480} id={styles.RamenImage} />
         </div>
       </main>
+      <div className={styles.ComponentsContainer}>
+        <About />
+      </div>
     </div>
   )
 }
