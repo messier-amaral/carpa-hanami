@@ -73,3 +73,8 @@
     background-color: #DB2D36;
     padding: 40px 20px;
 }
+
+#MeaningHanami::selection {
+    background-color: #F0EDE5;
+    color: #DB2D36;
+}

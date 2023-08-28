@@ -12,6 +12,11 @@ h1, h2, h3 {
     color: #F0EDE5;
 }
 
+h4 {
+    font-family: 'Hiragino Mincho', serif;
+    font-size: 1.8rem;
+}
+
 p {
     font-family: 'Hiragino Mincho', serif;
     font-weight: 500;
@@ -20,5 +25,10 @@ p {
 
 a {
     text-decoration: none;
+    color: #F0EDE5;
+}
+
+::selection {
+    background-color: #DB2D36;
     color: #F0EDE5;
 }

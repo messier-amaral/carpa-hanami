@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from '@styles/menu.module.css';
+import utilStyles from '@styles/utils.module.css';
 
 // Ramen Image
 import ShoyuRamen from '@ramen/shoyu.png';
@@ -30,7 +31,7 @@ export default function Menu() {
         <div className={styles.Container}>
             <div className={styles.TitleContainer}>
                 <h2 id={styles.Title}>Menu</h2>
-                <div className={styles.CircleTitle}></div>
+                <div id={styles.CircleTitle}></div>
             </div>
 
             <section className={styles.RamenContainer}>
@@ -50,7 +51,7 @@ export default function Menu() {
                             Macarrão Fino, Caldo á base de tonkotsu & Shoyu, Barriga de porco, Ajitama (Ovo Marinado), Menma (broto de bambo), Oleo de gergelim, Nori (Folhas de alga Marinha, verduras
                         </p>
                     </div>
-                    <div className={styles.Card}>
+                    <div className={styles.FoodCard}>
                         <Image src={MisoRamen} alt='Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Miso Ramen</h4>
                         <p className={styles.FoodIngredients}>
@@ -59,7 +60,7 @@ export default function Menu() {
                     </div>
                 </div>
                 <div className={styles.LastRowRamen}>
-                    <div className={styles.FoodCard}>
+                    <div className={styles.FoodCard}  id={styles.FirstRamen}>
                         <Image src={ShioRamen} alt='Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Shio Ramen</h4>
                         <p className={styles.FoodIngredients}>
@@ -74,29 +75,27 @@ export default function Menu() {
                         </p>
                     </div>
                 </div>
-                <Image src={BackgroundRamen} alt='Background Ramen Image' id={styles.BackgroundRamen} />
                 <div id={styles.CircleBottom}></div>
             </section>
 
             <section className={styles.SpecialtyContainer}>
                 <h3 id={styles.SpecialtyTitle}>Especialidades</h3>
                 <div className={styles.SpecialtyRow}>
-                    <div className={styles.FoodCard}>
+                    <div className={styles.FoodCardBlack}>
                         <Image src={Gyoza} alt='Gyoza Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Gyoza</h4>
-                        <p className={styles.FoodIngredients}>
+                        <p className={styles.FoodIngredientsBlack}>
                             Massa de gyoza, carne de porco moída, repolho, óleo de gergelim, gengibre ralado, alho-poró, molho shoyu, óleo de pimenta
                         </p>
                     </div>
-                    <div className={styles.FoodCard}>
+                    <div className={styles.FoodCardBlack}>
                         <Image src={Yakisoba} alt='Yakisoba Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Yakisoba</h4>
-                        <p className={styles.FoodIngredients}>
+                        <p className={styles.FoodIngredientsBlack}>
                             macarrão de yakisoba, carne bovina em tiras finas, molho de yakisoba, molho shoyu, óleo vegetal, gengibre, óleo de pimenta, vegetais
                         </p>
                     </div>
                 </div>
-                <Image src={BackgroundRamen} alt='Background Ramen Image' id={styles.BackgroundSpecialty} />
             </section>
 
             <section className={styles.SushiContainer}>
@@ -109,7 +108,7 @@ export default function Menu() {
                             tira de salmão, arroz, wasabi, molho shoyu
                         </p>
                     </div>
-                    <div className={styles.FoodCard}>
+                    <div className={styles.FoodCard} id={styles.FirstSushi}>
                         <Image src={MakiSushi} alt='Maki Sushi Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Maki</h4>
                         <p className={styles.FoodIngredients}>
@@ -150,14 +149,14 @@ export default function Menu() {
                 </div>
 
                 <div className={styles.SushiThirdRow}>
-                    <div className={styles.FoodName}>
+                    <div className={styles.FoodCard} id={styles.SashimiSushi} >
                         <Image src={SashimiSushi} alt='Sashimi Sushi Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Sashimi</h4>
                         <p className={styles.FoodIngredients}>
                             grande pedaço de salmão, wasabi, molho shoyu
                         </p>
                     </div>
-                    <div className={styles.FoodName}>
+                    <div className={styles.FoodCard}>
                         <Image src={HossomakiSushi} alt='Hossomaki Sushi Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Hossomaki</h4>
                         <p className={styles.FoodIngredients}>
@@ -165,34 +164,33 @@ export default function Menu() {
                         </p>
                     </div>
                 </div>
-                <Image src={BackgroundRamen} alt='Background Ramen Image' id={styles.BackgroundSushi} />
             </section>
 
-            <section className={styles.GrilledSpecialtyContainer}>
+            <section className={styles.GrilledContainer}>
                 <h3 id={styles.GrilledTitle}>
-                    Especialidades <span className={utilStyles.RedEmphasis}>Grelhadas</span>
+                    Especialidades <br /> <span className={utilStyles.RedEmphasis}>Grelhadas</span>
                 </h3>
                 <div className={styles.GrilledFirstRow}>
-                    <div className={styles.FoodCard}>
+                    <div className={styles.FoodCardBlack}>
                         <Image src={Yakitori} alt='Yakitori Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Yakitori</h4>
-                        <p className={styles.FoodIngredients}>
+                        <p className={styles.FoodIngredientsBlack}>
                             Peito de frango cortado em pedaços pequenos, espetos de bambu, moho de yakitori (shoyu, saquê, mirin e acuçar), cebolinha
                         </p>
                     </div>
-                    <div className={styles.FoodCard}>
+                    <div className={styles.FoodCardBlack}>
                         <Image src={Teriyaki} alt='Teriyaki Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Teriyaki</h4>
-                        <p className={styles.FoodIngredients}>
+                        <p className={styles.FoodIngredientsBlack}>
                             peito de frango em cubos, molho Teriyaki (Shoyu, mirin e acuçar), arroz, pimentão, brócolis, cebolinha, pimenta, semente de gergelim
                         </p>
                     </div>
                 </div>
                 <div className={styles.GrilledSecondRow}>
-                    <div className={styles.FoodCard}>
+                    <div className={styles.FoodCardBlack}>
                         <Image src={Tempura} alt='Tempura Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Tempura</h4>
-                        <p className={styles.FoodIngredients}>
+                        <p className={styles.FoodIngredientsBlack}>
                             Massa de tempura,  abóbora, batata doce, pimentão, cenoura, pepino, camarão, molho shoyu e tsuyu
                         </p>
                     </div>

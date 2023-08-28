@@ -1,1 +1,159 @@
 @import url('../src/app/fonts/fonts.module.css');
+
+.Container {
+    padding: 45px 0px;
+    background-color: #F0EDE5;
+}
+
+.TitleContainer {
+    position: relative;
+}
+
+#Title {
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 100px;
+    letter-spacing: 2px;
+    text-align: center;
+
+    color: #131012;
+    font-size: 3rem;
+    font-family: 'Soka Regular', sans-serif;
+    font-weight: 600;
+}
+
+#CircleTitle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #DB2D36;
+
+    position: absolute;
+    top: 0;
+    left: 54%;
+    z-index: 0;
+}
+
+.RamenContainer {
+    padding: 60px 80px;
+    background-color: #131012;
+}
+
+#RamenTitle, 
+#SpecialtyTitle,
+#SushiTitle,
+#GrilledTitle {
+    margin-bottom: 60px;
+    color: #DB2D36;
+    letter-spacing: 5px;
+    text-align: center;
+
+    font-size: 3rem;
+    font-family: 'Soka Regular', sans-serif;
+    font-weight: 500;
+}
+
+.FirstRowRamen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-bottom: 100px;
+}
+
+.LastRowRamen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#FirstRamen {
+    margin-right: 130px;
+}
+
+.FoodCard {
+    border: 1px solid #F0EDE5;
+    padding: 10px;
+}
+
+.FoodName {
+    margin-top: 15px;
+    text-align: center;
+    color: #DB2D36;
+}
+
+.FoodIngredients {
+    padding: 10px;
+    width: 300px;
+    text-align: justify;
+}
+
+.SpecialtyContainer {
+    padding: 60px 120px;
+}
+
+.SpecialtyRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.FoodCardBlack {
+    border: 1px solid #131012;
+    padding: 10px;
+}
+
+.FoodIngredientsBlack {
+    padding: 10px;
+    width: 300px;
+    text-align: justify;
+    color: #131012;
+}
+
+
+.SushiContainer {
+    padding: 60px 120px;
+    background-color: #131012;
+}
+
+#SushiTitle {
+    color: #F0EDE5;
+}
+
+.SushiFirstRow,
+.SushiSecondRow,
+.SushiThirdRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.SushiThirdRow {
+    justify-content: center;
+}
+
+#SashimiSushi {
+    margin-right: 130px;
+}
+
+.GrilledContainer {
+    padding: 60px 120px;
+}
+
+#GrilledTitle {
+    color: #131012;
+}
+
+.GrilledFirstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.GrilledSecondRow {
+    display: flex;
+    justify-content: center;
+}

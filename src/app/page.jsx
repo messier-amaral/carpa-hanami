@@ -14,6 +14,8 @@ import { BsArrowUpRight } from 'react-icons/bs';
 
 // Components 
 import About from './components/About';
+import Experience from './components/Experience';
+import Menu from './components/Menu';
 
 export default function Home() {
   return (
@@ -61,6 +63,8 @@ export default function Home() {
       </main>
       <div className={styles.ComponentsContainer}>
         <About />
+        <Experience />
+        <Menu />
       </div>
     </div>
   )
