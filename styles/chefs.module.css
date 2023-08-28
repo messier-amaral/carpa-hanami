@@ -1,8 +1,10 @@
 @import url('../src/app/fonts/fonts.module.css');
 
 .Container {
+    position: relative;
     padding: 45px 80px;
     background-color: #F0EDE5;
+    overflow: hidden;
 }
 
 
@@ -17,6 +19,16 @@
     font-weight: 600;
 }
 
+#Circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    background-color: #DB2D36;
+    position: absolute;
+    top: -80px;
+    right: -100px;
+}
 
 .FirstRow,
 .SecondRow {

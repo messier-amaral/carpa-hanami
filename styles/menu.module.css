@@ -36,8 +36,21 @@
 }
 
 .RamenContainer {
+    position: relative;
     padding: 60px 80px;
-    background-color: #131012;
+}
+
+.RamenContent {
+    position: relative;
+    z-index: 1;
+}
+
+.BackgroundRamen {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    z-index: 0;
+    width: 110%;
 }
 
 #RamenTitle, 
@@ -90,6 +103,7 @@
 }
 
 .SpecialtyContainer {
+    margin-top: 150px;
     padding: 60px 120px;
 }
 
@@ -113,8 +127,20 @@
 
 
 .SushiContainer {
+    position: relative;
     padding: 60px 120px;
-    background-color: #131012;
+}
+
+.SushiContent {
+    position: relative;
+    z-index: 1;
+}
+
+.BackgroundSushi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 #SushiTitle {
@@ -139,6 +165,7 @@
 }
 
 .GrilledContainer {
+    margin-top: 100px;
     padding: 60px 120px;
 }
 
