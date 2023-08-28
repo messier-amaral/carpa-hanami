@@ -1,1 +1,25 @@
 @import url('../src/app/fonts/fonts.module.css');
+
+.Container {
+    padding: 120px 80px 80px 80px;
+    height: 90vh;
+    background-color: #f3e5da;
+}
+
+.Card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #DB2D36;
+}
+
+#Content {
+    margin: 45px 100px;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+#Content::selection {
+    background-color: #f3e5da;
+    color: #DB2D36;
+}

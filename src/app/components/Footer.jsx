@@ -1,16 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@styles/footer.module.css';
+import utilStyles from '@styles/utils.module.css';
 
 // Icons
 import { BsWhatsapp, BsInstagram } from 'react-icons/bs';
-import { SiUbereats } from 'react-icons/sy'
+import { SiUbereats } from 'react-icons/si'
+
+import Logo from '@svg/carpa-logo.svg';
 
 export default function Footer() {
     return (
         <footer className={styles.Container}>
             <div className={styles.LogoContainer}>
-                <Image src={styles.Logo} alt='Logo Carpa Hanami' id={styles.Logo} />
+                <Image src={Logo} alt='Logo Carpa Hanami' id={styles.Logo} />
                 <p id={styles.NameLogo}>
                     Carpa <span className={utilStyles.RedEmphasis}>Hanami</span>
                 </p>

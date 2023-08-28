@@ -6,7 +6,6 @@ import Yokocho from '@png/yokocho.png'
 export default function ExtraContent() {
     return (
         <section className={styles.Container}>
-            <div id={styles.Circle}></div>
             <div className={styles.Card}>
                 <Image src={Yokocho} alt='Yokocho Image' id={styles.CardImage} />
                 <p id={styles.Content}>

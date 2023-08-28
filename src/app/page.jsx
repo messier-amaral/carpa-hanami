@@ -6,7 +6,7 @@ import styles from '@styles/page.module.css'
 import utilStyles from '@styles/utils.module.css'
 
 // Images and Icons
-import HeaderLogo from '@svg/header-logo.svg';
+import HeaderLogo from '@svg/carpa-logo.svg';
 import JapanesePattern from '@svg/japan-pattern.svg';
 import Ramen from '@png/welcome-ramen.png';
 
@@ -16,6 +16,10 @@ import { BsArrowUpRight } from 'react-icons/bs';
 import About from './components/About';
 import Experience from './components/Experience';
 import Menu from './components/Menu';
+import ExtraContent from './components/ExtraContent';
+import Chefs from './components/Chefs';
+import Address from './components/Address';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -65,6 +69,10 @@ export default function Home() {
         <About />
         <Experience />
         <Menu />
+        <ExtraContent />
+        <Chefs />
+        <Address />
+        <Footer />
       </div>
     </div>
   )

@@ -1,1 +1,44 @@
 @import url('../src/app/fonts/fonts.module.css');
+
+.Container {
+    padding: 120px 80px;
+    background-image: url(/png/address.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Restaurants {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Address {
+    margin-bottom: 30px;
+}
+
+.RestaurantName {
+    color: #DB2D36;
+    font-family: 'Soka UltraBold', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+}
+
+.Number {
+    margin-bottom: 80px;
+    text-align: end;
+
+    font-family: 'Soka UltraBold', sans-serif;
+    font-size: 1.5rem;
+}
+
+#JapanLetter {
+    margin-top: 100px;
+    text-align: center;
+    letter-spacing: 25px;
+
+    color: #DB2D36;
+    font-family: 'Soka UltraBold', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+}
