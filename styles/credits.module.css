@@ -1,0 +1,105 @@
+@import url('../src/app/fonts/fonts.module.css');
+
+.Container {
+    height: 100vh;
+    padding: 45px 80px;
+    background-color: #F0EDE5;
+}
+
+.TitleContainer {
+    position: relative;
+}
+
+#Title {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    letter-spacing: 4px;
+
+    color: #131012;
+    font-family: 'Soka Regular', sans-serif;
+    font-size: 4rem;
+}
+
+#TitleCircle {
+    width: 80px;
+    height: 80px;
+    background-color: #DB2D36;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    right: 36%;
+}
+
+.Content {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Description {
+    width: 700px;
+    margin-bottom: 45px;
+    text-align: justify;
+
+    color: #131012;
+    font-family: 'Soka Regular', sans-serif;
+    font-size: 1.1rem;
+}
+
+.Credits {
+    text-align: center;
+    text-transform: capitalize;
+    color: #131012;
+
+    font-family: 'Soka Regular', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.CreditsLink {
+    font-family: 'Soka UltraBold', sans-serif;
+    font-size: 1rem;
+    color: #DB2D36;
+    transition: font-size 1.5s ease, text-decoration 1.5s ease;
+}
+
+.CreditsLink:hover {
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.SocialMedias {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Social {
+    margin-right: 30px;
+    color: #DB2D36;
+    font-family: 'Soka UltraBold', sans-serif;
+    font-size: 1.5rem;
+}
+
+.LinkContainer {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+#LinkToBack {
+    padding: 10px 25px;
+    background-color: #DB2D36;
+    font-family: 'Soka Regular', sans-serif;
+    font-size: 1.2rem;
+    transition: transform 1.5s ease;
+}
+
+#LinkToBack:hover {
+    transform: scale(1.1);
+}

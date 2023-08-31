@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from '@styles/chefs.module.css';
 import utilStyles from '@styles/utils.module.css';
 
+
 // Images
 import Kenji from '@chefs/kenji.png';
 import Hiroshi from '@chefs/hiroshi.png';

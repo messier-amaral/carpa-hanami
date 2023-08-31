@@ -27,7 +27,7 @@ export default function Home() {
       <header className={styles.Header}>
         <nav className={styles.NavBar}>
           <Link href='#' className={styles.NavOptions}>Welcome</Link>
-          <Link href='#' className={styles.NavOptions} id={styles.OptionMarginOne}>About us</Link>
+          <Link href='#about-section' className={styles.NavOptions} id={styles.OptionMarginOne} >About us</Link>
           <Link href='#' className={styles.NavOptions}>Menu</Link>
 
           <Image src={HeaderLogo} alt='Header Logo' width={50} className={styles.HeaderLogo} />
@@ -66,7 +66,9 @@ export default function Home() {
         </div>
       </main>
       <div className={styles.ComponentsContainer}>
-        <About />
+        <div id='about-section'>
+          <About  />
+        </div>
         <Experience />
         <Menu />
         <ExtraContent />

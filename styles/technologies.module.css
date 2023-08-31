@@ -1,0 +1,102 @@
+@import url('../src/app/fonts/fonts.module.css');
+
+.Container {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background-color: #131012;
+    padding: 45px 80px;
+}
+
+.Content {
+    position: relative;
+    z-index: 1;
+}
+
+#FirstCircle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #DB2D36;
+
+    z-index: 0;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+#LastCircle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #DB2D36;
+
+    z-index: 0;
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+}
+
+#Title {
+    margin-bottom: 80px;
+    text-align: center;
+    letter-spacing: 10px;
+
+    color: #DB2D36;
+    font-family: 'Soka Regular', sans-serif;
+    font-size: 4rem;
+}
+
+.Description {
+    width: 900px;
+    letter-spacing: 4px;
+    margin-bottom: 45px;
+    
+    text-transform: uppercase;
+    font-family: 'Soka Regular', sans-serif;
+    font-weight: 400;
+}
+
+
+#TitleList {
+    margin-top: 80px;
+    text-align: center;
+    letter-spacing: 4px;
+
+    color: #DB2D36;
+    font-family: 'Hiragino Mincho', serif;
+    font-size: 1.8rem;
+}
+
+.List {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ItemList {
+    text-align: start;
+    margin-bottom: 10px;
+    color: #F0EDE5;
+    font-family: 'Soka Regular', sans-serif;
+    font-size: 1.3rem;
+}
+
+.LinkContainer {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+#LinkToBack {
+    padding: 10px 25px;
+    background-color: #DB2D36;
+    font-family: 'Soka Regular', sans-serif;
+    font-size: 1.2rem;
+    transition: transform 1.5s ease;
+}
+
+#LinkToBack:hover {
+    transform: scale(1.1);
+}
