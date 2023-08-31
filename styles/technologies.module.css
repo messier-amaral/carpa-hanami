@@ -100,3 +100,39 @@
 #LinkToBack:hover {
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 500px) {
+    .Container {
+        padding: 32px;
+    }
+
+    #Title {
+        margin-bottom: 60px;
+        font-size: 2rem;
+    }
+
+    .Description {
+        width: 340px;
+        letter-spacing: 2px;
+        font-size: .8rem;
+    }
+
+    #TitleList {
+        font-size: 1.5rem;
+    }
+
+    .ItemList {
+        font-size: 1.1rem;
+    }
+
+    #FirstCircle {
+        width: 150px;
+        height: 150px;
+        top: -80px;
+        right: -90px;
+    }
+
+    .LinkContainer {
+        margin-top: 90px;
+    }
+}

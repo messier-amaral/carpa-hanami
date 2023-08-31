@@ -1,7 +1,6 @@
 @import url('../src/app/fonts/fonts.module.css');
 
 .Container {
-    height: 100vh;
     padding: 45px 80px;
     background-color: #F0EDE5;
 }
@@ -102,4 +101,50 @@
 
 #LinkToBack:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .Container {
+        padding: 32px;
+    }
+
+    #Title {
+        margin-bottom: 60px;
+        font-size: 3rem;
+    }
+
+    #TitleCircle {
+        width: 60px;
+        height: 60px;
+        right: 9%;
+    }
+
+    .Content {
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    .Description {
+        width: 340px;
+        letter-spacing: 2px;
+        font-size: .9rem;
+    }
+
+    #Yokocho {
+        display: none;
+    }
+
+    .Credits {
+        font-size: 1.1rem;
+    }
+
+    .SocialMedias {
+        flex-direction: column;
+    }
+
+    .Social {
+        margin-right: 0px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
 }
