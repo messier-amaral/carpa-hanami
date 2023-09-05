@@ -6,14 +6,12 @@ import JapaneseChef from '@png/japanese-chef.png';
 import Salmon from '@png/salmon.png';
 import JapaneseFood from '@png/japanese-food.png';
 
-import Carpa from '@svg/carpa-experience.svg';
-
 export default function Experience() {
     return (
         <section className={styles.Container}>
             <div className={styles.TitleContainer}>
                 <div id={styles.CircleTitle}></div>
-                <h2 id={styles.Title}>Autêntica Culinária Japonesa, Sem <br /> Qualquer Alteração!</h2>
+                <h2 id={styles.Title}>Autêntica Culinária Japonesa, Sem Qualquer Alteração!</h2>
             </div>
             <div className={styles.CardContainer}>
                 <div className={styles.Card}>

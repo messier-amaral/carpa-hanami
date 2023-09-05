@@ -2,7 +2,6 @@
 
 .Container {
     padding: 120px 80px 80px 80px;
-    height: 90vh;
     background-color: #f3e5da;
 
     background-image: url(/svg/carpa-experience.svg);
@@ -53,4 +52,24 @@
 .CardDescription::selection {
     background-color: #f3e5da;
     color: #DB2D36;
+}
+
+@media (max-width: 768px) {
+    .Container { padding: 124px 32px 124px 32px; }
+
+    #Title { line-height: 1.6; font-size: 1.5rem; }
+
+    .CardContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .Card { width: 250px; }
+
+    .CardImage { width: 250px; height: 150px;}
+
+    .CardDescription { font-size: .8rem; max-width: 250px; }
 }
