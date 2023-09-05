@@ -5,48 +5,11 @@
 }
 
 .Main {
-    padding: 0px 80px 80px 80px;
-    height: 100vh;
-}
-
-.Header {
-    padding-top: 45px;
-}
-
-.NavBar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.NavOptions {
-    font-family: 'New York', sans-serif;
-    font-size: 1.3rem;
-    transition: text-decoration 1.3s ease, transform 1.3s ease, letter-spacing 1.3s ease;
-}
-
-.NavOptions:hover {
-    text-decoration: underline;
-    transform: scale(1.2);
-    letter-spacing: 2px;
-    transform-origin: center;
-}
-
-.HeaderLogo {
-    margin: 0px 40px 0px 40px;
-}
-
-#OptionMarginOne,
-#OptionMarginTwo {
-    margin: 0px 25px 0px 25px;
-}
-
-.Main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 80px 120px 80px;
 }
 
 #Title {
@@ -121,4 +84,64 @@
     z-index: 2;
     bottom: -70px;
     left: 0;
+}
+
+
+@media (max-width: 768px) {
+
+    .Container { overflow: hidden; }
+    
+    .Main { 
+        padding: 16px 24px 180px 24px;
+        flex-direction: column; 
+    }
+
+    #Title { font-size: 2.6rem; }
+
+    #Description {
+        width: 380px;
+        font-size: .8rem;
+    }
+
+    .ButtonContainer { 
+        display: flex;
+        justify-content: center;
+        margin-top: 42px;
+        
+     }
+
+    #AboutUsButton, #IconButton { display: none; }
+
+    #SeeMenuButton {
+        margin-left: 0px;
+        padding: 10px 25px;
+        background-color: #DB2D36;
+    }
+
+    .ImageContainer {
+        margin-top: 64px;
+    }
+
+    #CircleImage {
+        width: 140px;
+        height: 140px;
+        margin-top: 24px;
+        margin-right: 24px;
+    }
+
+    #JapanesePattern {
+        width: 140px;
+        height: 248px;
+    }
+
+    .TitleImage {
+        top: 45px;
+        font-size: 3.5rem;
+    }
+
+    #RamenImage {
+        width: 250px;
+        height: 235px;
+        bottom: -50px;
+    }
 }

@@ -78,3 +78,47 @@
     background-color: #F0EDE5;
     color: #DB2D36;
 }
+
+@media (max-width: 768px) {
+    .Container {
+        padding: 32px 24px 180px 24px;
+    }
+
+    .AboutSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ContentContainer {
+        margin-bottom: 32px;
+    }
+
+    #Title { font-size: 2.5rem; }
+
+    #CircleTitle {
+        width: 50px;
+        height: 50px;
+        top: -13px;
+        left: 14%;
+    }
+
+    #TitleContent { font-size: 1.3rem; }
+
+    .Description {
+        width: 350px;
+        margin-left: 15px;
+        font-size: .8rem;
+    }
+
+    #SakuraImage {
+        width: 260px;
+        height: 322px;
+    }
+
+    #MeaningHanami {
+        width: 190px;
+        font-size: .6rem;
+        bottom: -75px;
+        right: -70px;
+    }
+}

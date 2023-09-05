@@ -6,13 +6,13 @@ import styles from '@styles/page.module.css'
 import utilStyles from '@styles/utils.module.css'
 
 // Images and Icons
-import HeaderLogo from '@svg/carpa-logo.svg';
 import JapanesePattern from '@svg/japan-pattern.svg';
 import Ramen from '@png/welcome-ramen.png';
 
 import { BsArrowUpRight } from 'react-icons/bs';
 
 // Components 
+import NavBar from './components/NavBar';
 import About from './components/About';
 import Experience from './components/Experience';
 import Menu from './components/Menu';
@@ -24,20 +24,7 @@ import Footer from './components/Footer';
 export default function Home() {
   return (
     <div className={styles.Container}>
-      <header className={styles.Header}>
-        <nav className={styles.NavBar}>
-          <Link href='#' className={styles.NavOptions}>Welcome</Link>
-          <Link href='#about-section' className={styles.NavOptions} id={styles.OptionMarginOne} >About us</Link>
-          <Link href='#' className={styles.NavOptions}>Menu</Link>
-
-          <Image src={HeaderLogo} alt='Header Logo' width={50} className={styles.HeaderLogo} />
-
-          <Link href='#' className={styles.NavOptions}>Story</Link>
-          <Link href='#' className={styles.NavOptions} id={styles.OptionMarginTwo}>Chefs</Link>
-          <Link href='#' className={styles.NavOptions}>Addres</Link>
-        </nav>
-      </header>
-      
+      <NavBar />
       <main className={styles.Main}>
         <section className={styles.ContentContainer}>
           <div className={styles.TitleContainer}>

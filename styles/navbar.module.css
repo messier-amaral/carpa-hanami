@@ -1,0 +1,33 @@
+@import url('../src/app/fonts/fonts.module.css');
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 45px;
+    margin-bottom: 80px;
+}
+
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.NavOptions {
+    font-family: 'New York', sans-serif;
+    font-size: 1.3rem;
+    transition: text-decoration 1.3s ease, transform 1.3s ease, letter-spacing 1.3s ease;
+}
+
+.NavOptions:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+    letter-spacing: 2px;
+    transform-origin: center;
+}
+
+.HeaderLogo {
+    margin: 0px 40px 0px 40px;
+}
