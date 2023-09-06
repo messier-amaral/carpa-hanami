@@ -145,3 +145,9 @@
         bottom: -50px;
     }
 }
+
+@media (min-width: 1536px) {
+    .Main {
+        padding: 0px 80px 250px 80px;
+    }
+}

@@ -73,3 +73,9 @@
 
     .CardDescription { font-size: .8rem; max-width: 250px; }
 }
+
+@media (min-width: 1600px) {
+    .Container {
+        padding: 120px 80px 210px 80px;
+    }
+}
