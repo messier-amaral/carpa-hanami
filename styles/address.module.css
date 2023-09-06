@@ -42,3 +42,13 @@
     font-weight: 800;
     font-size: 4rem;
 }
+
+@media (max-width: 768px) {
+    .Container { padding: 32px; }
+
+    .RestaurantName { font-size: 1.3rem; }
+
+    .Location { font-size: .8rem;}
+
+    .Number { font-size: 1rem;}
+}

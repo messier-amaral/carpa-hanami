@@ -62,3 +62,35 @@
 .Icons:hover {
     transform: scale(1.3);
 }
+
+@media (max-width: 768px) {
+    .Container { 
+        flex-direction: column;
+
+        padding: 32px;
+    }
+
+    .LogoContainer { margin-bottom: 64px; }
+
+    .LinkContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .Options { 
+        margin: 0px 0px 42px 0px; 
+
+        text-align: center;
+    }
+
+    .Option  { margin-bottom: 10px; }
+
+    .SocialMedia {
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .Icons { margin: 0px; }
+}
