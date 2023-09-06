@@ -54,3 +54,33 @@
     font-family: 'Soka Regular', sans-serif;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    .Container { padding: 32px; }
+
+    #Title { 
+        font-size: 2.5rem;
+        margin-bottom: 64px;
+    }
+
+    #Circle { 
+        top: 70px;
+        right: -170px;
+    }
+
+    .FirstRow,
+    .SecondRow {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
+        gap: 32px;
+    }
+
+    #ChefSophia {
+        margin-left: 0px;
+    }
+
+    .ChefName {
+        font-size: .8rem;
+    }
+}

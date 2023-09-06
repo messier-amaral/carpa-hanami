@@ -184,3 +184,112 @@
     display: flex;
     justify-content: center;
 }
+
+
+@media (max-width: 768px) {
+    .Container {
+        padding: 32px 0px 24px 0px;
+    }
+
+    #Title { font-size: 2.5rem; margin-bottom: 42px; }
+
+    #RamenTitle,
+    #SpecialtyTitle,
+    #SushiTitle,
+    #GrilledTitle { font-size: 2rem;}
+
+    .RamenContainer {
+        display: flex;
+        justify-content: center;
+        padding: 32px;
+        background-image: url(/svg/background-ramen-mb.svg);
+        background-size: cover;
+    }
+
+    .RamenContainer,
+    .RamenContent,
+    .BackgroundRamen,
+    .SushiContainer,
+    .SushiContent,
+    .BackgroundSushi { position: relative; }
+
+    .FirstRowRamen,
+    .LastRowRamen {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .FoodCard, .FoodCardBlack {
+        width: 250px;
+        margin-bottom: 42px;
+    }
+
+    #FirstRamen { margin-right: 0px; }
+
+    .FoodImage {
+        width: 230px;
+        height: 130px;
+    }
+
+    .FoodName {
+        width: 230px;
+        font-size: 1.3rem;
+    }
+
+    .FoodIngredients, .FoodIngredientsBlack {
+        width: 230px;
+        font-size: .8rem;
+    }
+
+    .BackgroundRamen,
+    .BackgroundSushi { display: none; }
+
+    .SpecialtyContainer {   
+        margin-top: 24px;      
+        padding: 32px; 
+    }
+
+    .SpecialtyRow { 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .SushiContainer {
+        display: flex;
+        justify-content: center;
+        padding: 32px;
+        background-image: url(/svg/background-sushi-mb.svg);
+        background-size: cover;
+    }
+
+    #SushiTitle { margin-top: 32px; }
+
+    .SushiFirstRow,
+    .SushiSecondRow,
+    .SushiThirdRow {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    #SashimiSushi { margin-right: 0px; }
+
+    .GrilledContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    #GrilledTitle {
+        font-size: 1.8rem;
+    }
+
+    .GrilledFirstRow { 
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+}

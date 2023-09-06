@@ -3,7 +3,6 @@
 .Container {
     position: relative;
     padding: 120px 80px 80px 80px;
-    height: 90vh;
     background-color: #f3e5da;
 }
 
@@ -35,4 +34,26 @@
     position: absolute;
     top: -100px;
     left: -100px;
+}
+
+@media (max-width: 768px) {
+    .Container { padding: 64px; }
+
+    .Card {
+        flex-direction: column;
+    }
+
+    #CardImage {
+        display: none;
+    }
+
+    #Content {
+        margin: 20px;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    #CircleCard {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.322);
+    }
 }

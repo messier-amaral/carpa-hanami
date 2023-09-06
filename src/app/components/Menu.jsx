@@ -23,7 +23,7 @@ import NigiriSushi from '@sushi/nigiri.png';
 import MakiSushi from '@sushi/maki.png';
 import UramakiSushi from '@sushi/uramaki.png';
 import GunkanSushi from '@sushi/gunkan.png';
-import TemakiSushi from '@sushi/gunkan.png';
+import TemakiSushi from '@sushi/temaki.png';
 import HotRollSushi from '@sushi/hot-roll.png';
 import SashimiSushi from '@sushi/sashimi.png';
 import HossomakiSushi from '@sushi/hossomaki.png';
