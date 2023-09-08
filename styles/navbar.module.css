@@ -3,31 +3,75 @@
 .Header {
     display: flex;
     flex-direction: row;
-    padding-top: 45px;
-    margin-bottom: 80px;
+    padding: 35px;
+    margin-bottom: 64px;
 }
+
+#HeaderLogo { margin-right: 35px; }
 
 .NavBar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 25px;
 }
 
 .NavOptions {
-    font-family: 'New York', sans-serif;
+    margin-right: 25px;
+    font-family: 'New York', serif;
     font-size: 1.3rem;
-    transition: text-decoration 1.3s ease, transform 1.3s ease, letter-spacing 1.3s ease;
 }
 
-.NavOptions:hover {
-    text-decoration: underline;
-    transform: scale(1.2);
-    letter-spacing: 2px;
-    transform-origin: center;
+.NavOptions:hover { text-decoration: underline; }
+
+#MenuButton{
+    display: none;
+
+    width: 38px;
+    height: 38px;
+    padding: 0px;
+    border: none;
+    background: none;
 }
 
-.HeaderLogo {
-    margin: 0px 40px 0px 40px;
+.ButtonIcon {
+    font-size: 38px;
+    color: aliceblue;
+}
+
+@media (max-width: 768px) {
+    .Header { justify-content: space-between; position: relative; }
+
+    #HeaderLogo { width: 38px; height: 38px; }
+
+    .NavMenu { display: none; }
+
+    #MenuButton { display: block;  }
+
+    .MenuMobile {
+        position: absolute;
+        height: 90vh;
+        width: 100vw;
+
+        top: 0;
+        right: 0;
+        z-index: 3;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 32px;
+        background-color: #DB2D36;
+    }
+
+    .OptionsMobile {
+        margin-bottom: 20px;
+        font-family: 'New York', serif;
+        font-size: 2.5rem;
+    }
+
+    #CloseMenuMobile {
+        margin-top: -86px;
+    }
 }
