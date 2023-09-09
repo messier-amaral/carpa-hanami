@@ -23,7 +23,6 @@ export default function NavBar() {
                     <Link href='/' className={styles.NavOptions}>Welcome</Link>
                     <Link href='#about-section' className={styles.NavOptions}>About us</Link>
                     <Link href='#menu-section' className={styles.NavOptions}>Menu</Link>
-                    <Link href='#story-section' className={styles.NavOptions}>Story</Link>
                     <Link href='#chefs-section' className={styles.NavOptions}>Chefs</Link>
                     <Link href='#address-section' className={styles.NavOptions}>Address</Link>
                 </div>

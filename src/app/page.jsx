@@ -54,13 +54,19 @@ export default function Home() {
       </main>
       <div className={styles.ComponentsContainer}>
         <div id='about-section'>
-          <About  />
+          <About />
         </div>
         <Experience />
-        <Menu />
+        <div id='menu-section'>
+          <Menu />
+        </div>
         <ExtraContent />
-        <Chefs />
-        <Address />
+        <div id='chefs-section'>
+          <Chefs />
+        </div>
+        <div id='address-section'>
+          <Address />
+        </div>
         <Footer />
       </div>
     </div>
