@@ -6,8 +6,7 @@ This project addresses the concept of a fictional restaurant called Carpa Hanami
 React JS
 Next JS
 React Icons
-ScrolReveal
-Swiper
+Framer Motion
 ```
 
 *The design is based on the Wireframe created using Figma.*

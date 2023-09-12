@@ -82,7 +82,7 @@ export default function Menu() {
                     </div>
                     <div id={styles.CircleBottom}></div>
                 </div>
-                <Image src={BackgroundRamen} alt='Background Ramen Section' className={styles.BackgroundRamen} />
+                <Image src={BackgroundRamen} alt='Background Ramen Section' width='auto' className={styles.BackgroundRamen} />
             </section>
 
             <section className={styles.SpecialtyContainer}>
@@ -171,7 +171,7 @@ export default function Menu() {
                         </div>
                     </div>
                 </div>
-                <Image src={BackgroundSushi} alt='Background Sushi Section' className={styles.BackgroundSushi} />
+                <Image src={BackgroundSushi} alt='Background Sushi Section' width='auto' className={styles.BackgroundSushi} />
             </section>
 
             <section className={styles.GrilledContainer}>

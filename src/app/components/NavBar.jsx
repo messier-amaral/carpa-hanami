@@ -1,4 +1,5 @@
 'use client';
+import { motion, AnimatePresence } from 'framer-motion';
 import React, { useState } from 'react'; 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,6 +13,14 @@ export default function NavBar() {
 
     const toggleMobileMenu = () => {
         setMobileMenu(!isMobileMenu);
+    }
+
+    const variantes = {
+        visible: { opacity: 1 },
+        hidden: { opacity: 0 },
+        transition: {
+            duration: 2000
+        }
     }
 
     return (
@@ -29,19 +38,26 @@ export default function NavBar() {
                 <button id={styles.MenuButton} onClick={toggleMobileMenu}>
                     <AiOutlineMenu className={styles.ButtonIcon} />
                 </button>
-                {isMobileMenu && (
-                        <div className={styles.MenuMobile}>
-                        <button id={styles.MenuButton} onClick={toggleMobileMenu}>
-                            <AiOutlineClose className={styles.ButtonIcon} id={styles.CloseMenuMobile} />
-                        </button>
-                        <Link href='/' className={styles.OptionsMobile}>Welcome</Link>
-                        <Link href='#about-section' className={styles.OptionsMobile} onClick={toggleMobileMenu}>About us</Link>
-                        <Link href='#menu-section' className={styles.OptionsMobile} onClick={toggleMobileMenu}>Menu</Link>
-                        <Link href='#story-section' className={styles.OptionsMobile} onClick={toggleMobileMenu}>Story</Link>
-                        <Link href='#chefs-section' className={styles.OptionsMobile} onClick={toggleMobileMenu}>Chefs</Link>
-                        <Link href='#address-section' className={styles.OptionsMobile} onClick={toggleMobileMenu}>Address</Link>
-                        </div>
-                )}
+                <AnimatePresence>
+                    {isMobileMenu && (
+                            <motion.div 
+                                className={styles.MenuMobile}
+                                initial="hidden"
+                                animate="visible"
+                                variants={variantes}
+                            >
+                                <button id={styles.MenuButton} onClick={toggleMobileMenu}>
+                                    <AiOutlineClose className={styles.ButtonIcon} id={styles.CloseMenuMobile} />
+                                </button>
+                                <Link href='/' className={styles.OptionsMobile}>Welcome</Link>
+                                <Link href='#about-section' className={styles.OptionsMobile} onClick={toggleMobileMenu}>About us</Link>
+                                <Link href='#menu-section' className={styles.OptionsMobile} onClick={toggleMobileMenu}>Menu</Link>
+                                <Link href='#story-section' className={styles.OptionsMobile} onClick={toggleMobileMenu}>Story</Link>
+                                <Link href='#chefs-section' className={styles.OptionsMobile} onClick={toggleMobileMenu}>Chefs</Link>
+                                <Link href='#address-section' className={styles.OptionsMobile} onClick={toggleMobileMenu}>Address</Link>
+                            </motion.div>
+                    )}
+                </AnimatePresence>
             </nav>
         </header>
     );

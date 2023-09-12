@@ -1,7 +1,8 @@
+'use client';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from '@styles/chefs.module.css';
 import utilStyles from '@styles/utils.module.css';
-
 
 // Images
 import Kenji from '@chefs/kenji.png';
@@ -13,14 +14,30 @@ import Bejamin from '@chefs/bejamin.png';
 import Sophia from '@chefs/sophia.png';
 
 export default function Chefs() {
+
+    const variants = {
+        offscreen: {
+            y: 300,
+            opacity: 0
+        },
+        onscreen: {
+            y:0,
+            opacity: 1,
+            transition: {
+                type: "fade",
+                duration: 0.7
+            }
+        }
+    }
+
     return (
         <section className={styles.Container}>
             <div className={styles.ChefContent}>
-                <h2 id={styles.Title}>
+                <motion.h2 id={styles.Title}  initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} variants={variants}>
                     Meet Our <span className={utilStyles.RedEmphasis}>Chefs</span>
-                </h2>
+                </motion.h2>
                 
-                <div className={styles.FirstRow}>
+                <motion.div className={styles.FirstRow}  initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} variants={variants}>
                     <div className={styles.Chef}>
                         <Image src={Kenji} alt='Kenji' width={200} className={styles.ChefImage} />
                         <p className={styles.ChefName}>Kenji Nakamura</p>
@@ -37,8 +54,8 @@ export default function Chefs() {
                         <Image src={Daniel} alt='Daniel' width={200} className={styles.ChefImage} />
                         <p className={styles.ChefName}>Daniel Rodriguez </p>
                     </div>
-                </div>
-                <div className={styles.SecondRow}>
+                </motion.div>
+                <motion.div className={styles.SecondRow}  initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} variants={variants}>
                     <div className={styles.Chef}>
                         <Image src={Bejamin} alt='Bejamin' width={200} className={styles.ChefImage} />
                         <p className={styles.ChefName}>Bejamin Willians</p>
@@ -47,7 +64,7 @@ export default function Chefs() {
                         <Image src={Sophia} alt='Sophia' width={200} className={styles.ChefImage} />
                         <p className={styles.ChefName}>Sophia Martinez</p>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div id={styles.Circle}></div>
         </section>

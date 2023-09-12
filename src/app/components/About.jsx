@@ -1,17 +1,45 @@
+'use client';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from '@styles/about.module.css';
 
 import Sakura from '@png/sakura.png';
 
 export default function AboutUs() {    
+
+    const variants = {
+        offscreen: {
+            y: 300,
+            opacity: 0
+        },
+        onscreen: {
+            y:0,
+            opacity: 1,
+            transition: {
+                type: "fade",
+                duration: 0.8
+            }
+        }
+    }
     return (
         <section className={styles.Container}>
-            <div className={styles.TitleContainer}>
+            <motion.div className={styles.TitleContainer} 
+                initial="offscreen" 
+                whileInView="onscreen" 
+                viewport={{ once: true, amount: 0.8 }} 
+                variants={variants} >
+
                 <h2 id={styles.Title} >About Us</h2>
                 <div id={styles.CircleTitle} ></div>
-            </div>
+            </motion.div>
             <div className={styles.AboutSection}>
-                <div className={styles.ContentContainer}>
+
+                <motion.div className={styles.ContentContainer} 
+                    initial="offscreen" 
+                    whileInView="onscreen" 
+                    viewport={{ once: true, amount: 0.8 }} 
+                    variants={variants} >
+
                     <h3 id={styles.TitleContent} >
                         Restaurante Carpa Hanami - <br />O Sabor da Tradição Japonesa
                     </h3>
@@ -24,16 +52,22 @@ export default function AboutUs() {
                     <p className={styles.Description} >
                         Junte-se a nós para uma experiência gastronômica que transcende o tempo, onde os sabores autênticos se entrelaçam com narrativas ancestrais. No Restaurante Carpa Hanami, você não está apenas saboreando comida; você está saboreando a história e a beleza efêmera da culinária japonesa.
                     </p>
-                </div>
+                </motion.div>
 
-                <div className={styles.ExtraContainer}>
+                <motion.div className={styles.ExtraContainer} 
+                    initial="offscreen" 
+                    whileInView="onscreen" 
+                    viewport={{ once: true, amount: 0.8 }} 
+                    variants={variants}>
+    
                     <Image src={Sakura} alt='Hanami Image' width={400} id={styles.SakuraImage}  />
                     <div className={styles.MeaningContainer}>
                         <p id={styles.MeaningHanami} >
                             &quot;Hanami&quot; é a prática japonesa de apreciar as flores de cerejeira na primavera. Este ato efêmero simboliza a beleza fugaz da vida, uma filosofia que infundimos em cada aspecto de nossa cozinha.
                         </p>
                     </div>
-                </div>
+
+                </motion.div>
             </div>
         </section>
     )
