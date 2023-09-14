@@ -32,9 +32,9 @@ export default function Footer() {
                     <Link href='#' className={styles.Option}>Chefs</Link>
                 </div>
                 <div className={styles.Options}>
-                    <Link href='/technologies' className={styles.Option}>Tecnologias</Link>
-                    <Link href='/credits' className={styles.Option}>Créditos</Link>
-                    <Link href='#' className={styles.Option}>Código</Link>
+                    <Link href='/technologies' className={styles.Option}>Technologies</Link>
+                    <Link href='/credits' className={styles.Option}>Credits</Link>
+                    <Link href='#' className={styles.Option}>Code</Link>
                 </div>
             </div>
             <div className={styles.SocialMedia}>

@@ -46,21 +46,21 @@ export default function Menu() {
                             <Image src={ShoyuRamen} alt='Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Shoyu Ramen</h4>
                             <p className={styles.FoodIngredients}>
-                                Macarrão fino, Caldo à base de shoyu, Osso de porco, Niboshi (sardinha desidratada), ajitama (ovo marinado), Nori (folhas de alga marinha), verduras
+                                Thin noodles, soy sauce broth, pork bone, niboshi (dried sardines), ajitama (marinated egg), nori (seaweed leaves), greens
                             </p>
                         </div>
                         <div className={styles.FoodCard}>
                             <Image src={TonkotsuRamen} alt='Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Tonkotsu Ramen</h4>
                             <p className={styles.FoodIngredients}>
-                                Macarrão Fino, Caldo á base de tonkotsu & Shoyu, Barriga de porco, Ajitama (Ovo Marinado), Menma (broto de bambo), Oleo de gergelim, Nori (Folhas de alga Marinha, verduras
+                                Thin noodles, broth based on tonkotsu and shoyu, pork belly, ajitama (marinated egg), menma (bamboo shoot), sesame oil, nori (seaweed leaves, greens
                             </p>
                         </div>
                         <div className={styles.FoodCard}>
                             <Image src={MisoRamen} alt='Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Miso Ramen</h4>
                             <p className={styles.FoodIngredients}>
-                                Macarrão Fino, miso, carne de frango, carne de porco, ajitama (ovo marinado) óleo de gergelim, menma (broto de bambu), Milho, óleo de pimenta, verduras, cogumelo
+                                Thin noodles, miso, chicken meat, pork, ajitama (marinated egg) sesame oil, menma (bamboo shoot), corn, chili oil, greens, mushroom
                             </p>
                         </div>
                     </div>
@@ -69,14 +69,14 @@ export default function Menu() {
                             <Image src={ShioRamen} alt='Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Shio Ramen</h4>
                             <p className={styles.FoodIngredients}>
-                                Macarrão Fino, caldo á base de shio (sal), carne de porco, salmão, óleo de gergelim, óleo de pimenta, ajitama (ovo marinado), nori (folhas de alga marinha), verduras
+                                Thin noodles, shio (salt) based broth, pork, salmon, sesame oil, chili oil, ajitama (marinated egg), nori (seaweed sheets), vegetables
                             </p>
                         </div>
                         <div className={styles.FoodCard}>
                             <Image src={TsukemenRamen} alt='Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Tsukemen Ramen</h4>
                             <p className={styles.FoodIngredients}>
-                                Macarrão grosso, caldo a base de tonkotsu & shoyu, carne de frango, carne de porco, Menma (ovo cozido), óleo de gergelim, óleo de pimenta, Alga Nori. (tudo servido separado)
+                                Thick noodles, tonkotsu shoyu-based broth, chicken meat, pork, Menma (boiled egg), sesame oil, chili oil, Nori Seaweed. (everything served separately)
                             </p>
                         </div>
                     </div>
@@ -86,20 +86,20 @@ export default function Menu() {
             </section>
 
             <section className={styles.SpecialtyContainer}>
-                <h3 id={styles.SpecialtyTitle}>Especialidades</h3>
+                <h3 id={styles.SpecialtyTitle}>Specialties</h3>
                 <div className={styles.SpecialtyRow}>
                     <div className={styles.FoodCardBlack}>
                         <Image src={Gyoza} alt='Gyoza Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Gyoza</h4>
                         <p className={styles.FoodIngredientsBlack}>
-                            Massa de gyoza, carne de porco moída, repolho, óleo de gergelim, gengibre ralado, alho-poró, molho shoyu, óleo de pimenta
+                            Thick noodles, tonkotsu shoyu-based broth, chicken meat, pork, Menma (boiled egg), sesame oil, chili oil, Nori Seaweed. (everything served separately)
                         </p>
                     </div>
                     <div className={styles.FoodCardBlack}>
                         <Image src={Yakisoba} alt='Yakisoba Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Yakisoba</h4>
                         <p className={styles.FoodIngredientsBlack}>
-                            macarrão de yakisoba, carne bovina em tiras finas, molho de yakisoba, molho shoyu, óleo vegetal, gengibre, óleo de pimenta, vegetais
+                            Yakisoba noodles, thinly sliced beef, yakisoba sauce, soy sauce, vegetable oil, ginger, chili oil, vegetables
                         </p>
                     </div>
                 </div>
@@ -113,21 +113,21 @@ export default function Menu() {
                             <Image src={NigiriSushi} alt='Nigiri Sushi Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Nigiri</h4>
                             <p className={styles.FoodIngredients}>
-                                tira de salmão, arroz, wasabi, molho shoyu
+                                Salmon strips, rice, wasabi, soy sauce
                             </p>
                         </div>
                         <div className={styles.FoodCard} id={styles.FirstSushi}>
                             <Image src={MakiSushi} alt='Maki Sushi Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Maki</h4>
                             <p className={styles.FoodIngredients}>
-                                folhas de alga nori, arroz, pepino, abacate, cenoura, alface, wasabi, molho shoyu
+                                Nori seaweed sheets, rice, cucumber, avocado, carrot, lettuce, wasabi, soy sauce
                             </p>
                         </div>
                         <div className={styles.FoodCard}>
                             <Image src={UramakiSushi} alt='Urumaki Sushi Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Urumaki</h4>
                             <p className={styles.FoodIngredients}>
-                                folhas de alga nori, arroz, salmão, wasabi, molho shoyu, pepino, abacate, cenoura
+                                Nori seaweed sheets, rice, salmon, wasabi, soy sauce, cucumber, avocado, carrot
                             </p>
                         </div>
                     </div>
@@ -136,21 +136,21 @@ export default function Menu() {
                             <Image src={GunkanSushi} alt='Gunkan Sushi Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Gunkan</h4>
                             <p className={styles.FoodIngredients}>
-                                folhas de alga nori, arroz, atum picado, ovas de peixe, wasabi, molho shoyu
+                                Nori seaweed sheets, rice, chopped tuna, fish roe, wasabi, soy sauce
                             </p>
                         </div>
                         <div className={styles.FoodCard}>
                             <Image src={TemakiSushi} alt='Temaki Sushi Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Temaki</h4>
                             <p className={styles.FoodIngredients}>
-                                folhas de alga nori, arroz, bastante salmão cortado em tiras, wasabi, cenoura, abacate
+                                Nori seaweed sheets, rice, plenty of salmon cut into strips, wasabi, carrots, avocado
                             </p>
                         </div>
                         <div className={styles.FoodCard}>
                             <Image src={HotRollSushi} alt='HotRoll Sushi Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Hot Roll</h4>
                             <p className={styles.FoodIngredients}>
-                                folhas de alga nori, arroz, atum, cream cheese, cebolinha, massa de tempura, óleo de pimenta, óleo vegetal
+                                Nori seaweed sheets, rice, tuna, cream cheese, chives, tempura batter, chili oil, vegetable oil
                             </p>
                         </div>
                     </div>
@@ -159,14 +159,14 @@ export default function Menu() {
                             <Image src={SashimiSushi} alt='Sashimi Sushi Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Sashimi</h4>
                             <p className={styles.FoodIngredients}>
-                                grande pedaço de salmão, wasabi, molho shoyu
+                                Large piece of salmon, wasabi, soy sauce
                             </p>
                         </div>
                         <div className={styles.FoodCard}>
                             <Image src={HossomakiSushi} alt='Hossomaki Sushi Image' className={styles.FoodImage} />
                             <h4 className={styles.FoodName}>Hossomaki</h4>
                             <p className={styles.FoodIngredients}>
-                                folhas de alga nori, tiras de salmão, arroz, abacate, cenoura, molho shoyu
+                                Nori seaweed sheets, salmon strips, rice, avocado, carrot, soy sauce
                             </p>
                         </div>
                     </div>
@@ -176,21 +176,21 @@ export default function Menu() {
 
             <section className={styles.GrilledContainer}>
                 <h3 id={styles.GrilledTitle}>
-                    Especialidades <br /> <span className={utilStyles.RedEmphasis}>Grelhadas</span>
+                    Grilled <br /> <span className={utilStyles.RedEmphasis}>Specialties</span>
                 </h3>
                 <div className={styles.GrilledFirstRow}>
                     <div className={styles.FoodCardBlack}>
                         <Image src={Yakitori} alt='Yakitori Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Yakitori</h4>
                         <p className={styles.FoodIngredientsBlack}>
-                            Peito de frango cortado em pedaços pequenos, espetos de bambu, moho de yakitori (shoyu, saquê, mirin e acuçar), cebolinha
+                            Chicken breast cut into small pieces, bamboo skewers, yakitori moho (shoyu, sake, mirin and sugar), chives
                         </p>
                     </div>
                     <div className={styles.FoodCardBlack}>
                         <Image src={Teriyaki} alt='Teriyaki Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Teriyaki</h4>
                         <p className={styles.FoodIngredientsBlack}>
-                            peito de frango em cubos, molho Teriyaki (Shoyu, mirin e acuçar), arroz, pimentão, brócolis, cebolinha, pimenta, semente de gergelim
+                            Diced chicken breast, Teriyaki sauce (Shoyu, mirin and sugar), rice, peppers, broccoli, chives, pepper, sesame seeds
                         </p>
                     </div>
                 </div>
@@ -199,7 +199,7 @@ export default function Menu() {
                         <Image src={Tempura} alt='Tempura Image' className={styles.FoodImage} />
                         <h4 className={styles.FoodName}>Tempura</h4>
                         <p className={styles.FoodIngredientsBlack}>
-                            Massa de tempura,  abóbora, batata doce, pimentão, cenoura, pepino, camarão, molho shoyu e tsuyu
+                            Tempura batter, pumpkin, sweet potato, peppers, carrots, cucumber, shrimp, soy sauce and tsuyu
                         </p>
                     </div>
                 </div>

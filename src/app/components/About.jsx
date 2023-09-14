@@ -41,16 +41,16 @@ export default function AboutUs() {
                     variants={variants} >
 
                     <h3 id={styles.TitleContent} >
-                        Restaurante Carpa Hanami - <br />O Sabor da Tradição Japonesa
+                        Carpa Hanami Restaurant - <br />The Taste of Japanese Tradition
                     </h3>
                     <p className={styles.Description} >
-                        Bem-vindo ao Restaurante Carpa Hanami, onde cada prato é uma homenagem à rica herança culinária do Japão. O nome &quot;Carpa Hanami&quot; reflete nossa profunda conexão com as tradições japonesas, com um foco especial no conceito do &quot;hanami&quot;.
+                        Welcome to Carpa Hanami Restaurant, where every dish pays homage to Japan&apos;s rich culinary heritage. The name &quot;Carpa Hanami&quot; reflects our deep connection with Japanese traditions, with a special focus on the concept of &quot;hanami&quot;.
                     </p>
                     <p className={styles.Description} >
-                        Nossa jornada nos leva de volta às origens da cultura japonesa, celebrando cada mordida como uma conexão com séculos de tradição. Através de nossos pratos cuidadosamente preparados, compartilhamos as histórias antigas que moldaram nossa cozinha. Cada sushi, sashimi e prato quente é uma celebração da maestria culinária que passou de geração em geração, convidando você a mergulhar na autenticidade que define o Restaurante Carpa Hanami.
+                        Our journey takes us back to the origins of Japanese culture, celebrating each bite as a connection to centuries of tradition. Through our carefully prepared dishes, we share the ancient stories that have shaped our cuisine. Each sushi, sashimi and hot dish is a celebration of the culinary mastery passed down from generation to generation, inviting you to immerse yourself in the authenticity that defines Restaurante Carpa Hanami.
                     </p>
                     <p className={styles.Description} >
-                        Junte-se a nós para uma experiência gastronômica que transcende o tempo, onde os sabores autênticos se entrelaçam com narrativas ancestrais. No Restaurante Carpa Hanami, você não está apenas saboreando comida; você está saboreando a história e a beleza efêmera da culinária japonesa.
+                        Join us for a gastronomic experience that transcends time, where authentic flavors intertwine with ancient narratives. At Carpa Hanami Restaurant, you are not just enjoying food; you are savoring the history and ephemeral beauty of Japanese cuisine.
                     </p>
                 </motion.div>
 
@@ -63,7 +63,7 @@ export default function AboutUs() {
                     <Image src={Sakura} alt='Hanami Image' width={400} id={styles.SakuraImage}  />
                     <div className={styles.MeaningContainer}>
                         <p id={styles.MeaningHanami} >
-                            &quot;Hanami&quot; é a prática japonesa de apreciar as flores de cerejeira na primavera. Este ato efêmero simboliza a beleza fugaz da vida, uma filosofia que infundimos em cada aspecto de nossa cozinha.
+                            &quot;Hanami&quot; is the Japanese practice of enjoying cherry blossoms in spring. This ephemeral act symbolizes the fleeting beauty of life, a philosophy we infuse into every aspect of our cooking.
                         </p>
                     </div>
 

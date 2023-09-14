@@ -8,17 +8,17 @@ export default function Credits() {
     return (
         <section className={styles.Container}>
             <div className={styles.TitleContainer}>
-                <h2 id={styles.Title}>Creditos</h2>
+                <h2 id={styles.Title}>Credits</h2>
                 <div id={styles.TitleCircle}></div>
             </div>
 
             <div className={styles.Content}>
                 <div className={styles.DescriptionContainer}>
                     <p className={styles.Description}>
-                        O projeto Carpa Hanami exemplifica as minhas competências em Web Design, Design Gráfico convencional e programação. Ele foi criado com o intuito de enriquecer o meu portfólio profissional.
+                        The Carpa Hanami project exemplifies my skills in Web Design, conventional Graphic Design and programming. It was created with the aim of enriching my professional portfolio.
                     </p>
                     <p className={styles.Description}>
-                        Caso você esteja interessado em discutir um projeto real para o seu negócio, por favor, não hesite em entrar em contato. Ao compartilhar os detalhes do seu projeto, estou à disposição para fornecer um orçamento personalizado. Não vejo a hora de fazer parte do seu projeto!
+                        If you are interested in discussing a real project for your business, please don&apos;t hesitate to get in touch. When sharing the details of your project, I am available to provide a personalized quote. I can&apos;t wait to be part of your project!
                     </p>
                 </div>
 
@@ -26,10 +26,10 @@ export default function Credits() {
             </div>
 
             <p className={styles.Credits}>
-                Imagens retiradas de <Link href='https://unsplash.com/pt-br' className={styles.CreditsLink}>Unsplash</Link> & <Link href='https://www.instagram.com/bkgaijin/' className={styles.CreditsLink}>Baka Gaijin</Link>
+                Images taken from <Link href='https://unsplash.com/pt-br' className={styles.CreditsLink}>Unsplash</Link> & <Link href='https://www.instagram.com/bkgaijin/' className={styles.CreditsLink}>Baka Gaijin</Link>
             </p>
             <p className={styles.Credits}>
-                Criado e Desenvolvido por <Link href='https://messier-amaral.com' className={styles.CreditsLink}>Messier Amaral</Link>
+                Created and Developed by <Link href='https://messier-amaral.com' className={styles.CreditsLink}>Messier Amaral</Link>
             </p>
 
             <div className={styles.SocialMedias}>
@@ -40,7 +40,7 @@ export default function Credits() {
             </div>
 
             <div className={styles.LinkContainer}>
-                <Link href='/' id={styles.LinkToBack}>Voltar ao Projeto</Link>
+                <Link href='/' id={styles.LinkToBack}>Return to Project</Link>
             </div>
         </section>
     )

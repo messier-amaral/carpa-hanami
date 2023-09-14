@@ -28,7 +28,7 @@ export default function ExtraContent() {
                 <Image src={Yokocho} alt='Yokocho Image' id={styles.CardImage} />
                 
                 <p id={styles.Content}>
-                    Cada um dos pratos mencionados oferece uma gama de variações, abrangendo elementos como o tipo de peixe utilizado e os diversos molhos complementares. No nosso cardápio físico, você encontrará uma seleção de combos e porções, cada um acompanhado de seu respectivo valor. Importante destacar que todos esses combos e porções incluem os pratos mencionados anteriormente, proporcionando uma experiência completa da nossa oferta culinária.
+                    Each of the dishes mentioned offers a range of variations, covering elements such as the type of fish used and the different complementary sauces. On our physical menu, you will find a selection of combos and portions, each accompanied by its respective price. It is important to highlight that all of these combos and portions include the previously mentioned dishes, providing a complete experience of our culinary offer.
                 </p>
             </motion.div>
             <motion.div id={styles.CircleCard} initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }} variants={variants}></motion.div>
